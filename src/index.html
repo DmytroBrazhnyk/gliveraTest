@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main class="main">
+        <section class="sidebar-menu">
+            <div class="sidebar-menu__logo">
+                <img src="/img/logo.png" alt="Logo" class="sidebar-menu__logo-image">
+            </div>
+            <nav class="sidebar-menu__navigation">
+                <ul class="sidebar-menu__list">
+                    <li class="sidebar-menu__item">
+                        <a href="#" class="sidebar-menu__link">
+                            <img src="#" alt="Icon Dashboard" class="sidebar-menu__icon">
+                            <span class="sidebar-menu__text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#" class="sidebar-menu__link">
+                            <img src="#" alt="Icon Product" class="sidebar-menu__icon">
+                            <span class="sidebar-menu__text">Product</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#" class="sidebar-menu__link">
+                            <img src="#" alt="Icon Customers" class="sidebar-menu__icon">
+                            <span class="sidebar-menu__text">Customers</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#" class="sidebar-menu__link">
+                            <img src="#" alt="Icon Income" class="sidebar-menu__icon">
+                            <span class="sidebar-menu__text">Income</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#" class="sidebar-menu__link">
+                            <img src="#" alt="Icon Promote" class="sidebar-menu__icon">
+                            <span class="sidebar-menu__text">Promote</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#" class="sidebar-menu__link">
+                            <img src="#" alt="Icon Help" class="sidebar-menu__icon">
+                            <span class="sidebar-menu__text">Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-menu__user-profile">
+                <img src="#" alt="User Avatar" class="sidebar-menu__user-avatar">
+                <div class="sidebar-menu__user-info">
+                    <p class="sidebar-menu__user-name">Evano</p>
+                    <p class="sidebar-menu__user-position">Project Manager</p>
+                </div>
+            </div>
+        </section>
+        <section class="customer">
+            <div class="customer__header">
+                <div class="customer__header-left">
+                    <h1 class="customer__header-title">All Customers</h1>
+                    <h2 class="customer__header-subtitle">Active Members</h2>
+                </div>
+                <div class="customer__header-right">
+                    <input type="search" class="customer__search" placeholder="Search">
+                </div>
+            </div>
+            <div class="customer__body">
+                <div class="customer__table-head">
+                    <div class="customer__table-column">Customer Name</div>
+                    <div class="customer__table-column">Company</div>
+                    <div class="customer__table-column">Phone Number</div>
+                    <div class="customer__table-column">Email</div>
+                    <div class="customer__table-column">Country</div>
+                    <div class="customer__table-column">Status</div>
+                </div>
+                <div class="customer__cards">
+                    <!-- Карточки будуть вставлені тут через JS -->
+                </div>
+            </div>
+            <div class="customer__footer">
+                <p class="customer__footer-info">Showing data 1 to 8 of 256K entries</p>
+                <div class="customer__pagination">
+                    <!-- Менюшка для переключення пейджів буде генеруватися через JS -->
+                </div>
+            </div>
+        
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
