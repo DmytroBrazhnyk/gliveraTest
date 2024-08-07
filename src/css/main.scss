@@ -118,11 +118,12 @@ body {
     max-height: 812px;
     background-color: $color-white;
     margin: 0 auto;
-    padding-left: 38px;
     border-radius: 20px;
     &__header{
         display: flex;
         justify-content: space-between;
+        padding-left: 38px;
+        padding-right: 53px;
         &-left{
             .customer__header-title{
                 font-weight: $font-weight-semi-bold;
@@ -135,7 +136,6 @@ body {
         &-right{
             display: flex;
             align-items: center;
-            padding-right: 53px;
             .customer__search{
                 width: 216px;
                 height: 38px;
@@ -145,24 +145,40 @@ body {
             }
         }
     }
-    &__body{
-        display: flex;
-        flex-direction: column;
-        .customer__table-head{
-            display: flex;
-        }
-        .customer__cards{
+    &__body {
+        padding: 1rem;
+        font-size: 14px;
+        color: $color-card-text; 
+    }
 
-        }
+    &__table {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    &__table-column, &__table-cell {
+        padding: 20px;
+        border-bottom: 1px solid $color-card-border;
+    }
+
+    &__table-column {
+        font-weight: bold;
+        color: $color-title-text; 
+        white-space: nowrap; 
+    }
+
+    &__table-cell {
+        color: $color-card-text; 
     }
     &__footer{
         display: flex;
         &-info{
-            
+
         }
         .customer__pagination{
 
         }
     }
 }
+
 
