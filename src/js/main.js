@@ -182,3 +182,28 @@ function setPage(page){
     updatePagination(page,totalPages);
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerButton = document.querySelector('.burger-menu__button');
+    const sidebarMenu = document.querySelector('.sidebar-menu');
+
+    function checkScreenWidth() {
+        if (window.innerWidth > 768) {
+            sidebarMenu.style.display = 'flex';
+        } else {
+            sidebarMenu.style.display = 'none';
+        }
+    }
+    checkScreenWidth();
+    burgerButton.addEventListener('click', function () {
+        if (sidebarMenu.style.display === 'none' || sidebarMenu.style.display === '') {
+            sidebarMenu.style.display = 'flex';
+        } else {
+            sidebarMenu.style.display = 'none';
+        }
+    });
+
+    window.addEventListener('resize', function () {
+        checkScreenWidth();
+    });
+});
+

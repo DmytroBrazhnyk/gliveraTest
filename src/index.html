@@ -92,33 +92,45 @@
                 </div>
             </div>
         </section>
-        <section class="customer">
-            <div class="customer__header">
-                <div class="customer__header-left">
-                    <h2 class="customer__header-title">All Customers</h2>
-                    <h3 class="customer__header-subtitle">Active Members</h3>
-                </div>
-                <div class="customer__header-right">
-                    <input type="search" class="customer__search" placeholder="Search">
-                </div>
-            </div>
-            <div class="customer__body"></div>
-            <div class="customer__footer">
-                <p class="customer__footer-info">Showing data 1 to 8 of 256K entries</p>
-                <div class="customer__pagination">
-                    <button class="pagination__button pagination__button--prev" aria-label="Previous Page">
-                        &laquo;
-                    </button>
-                    <div class="pagination__buttons">
-                        <!-- Кнопки сторінок будуть додаватися тут через JS -->
+        <div class="wrapper">
+            <div class="header__info">Hello Evano 👋🏼,</div>
+            <section class="customer">
+                <div class="customer__header">
+                    <div class="customer__header-left">
+                        <h2 class="customer__header-title">All Customers</h2>
+                        <h3 class="customer__header-subtitle">Active Members</h3>
                     </div>
-                    <button class="pagination__button pagination__button--next" aria-label="Next Page">
-                        &raquo;
-                    </button>
+                    <div class="customer__header-right">
+                        <div class="input-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="#7E7E7E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm10 2-4.35-4.35"/>
+                            </svg>
+                            <input type="search" class="customer__search" placeholder="Search">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        
-        </section>
+                <div class="customer__body"></div>
+                <div class="customer__footer">
+                    <p class="customer__footer-info">Showing data 1 to 8 of 256K entries</p>
+                    <div class="customer__pagination">
+                        <button class="pagination__button pagination__button--prev" aria-label="Previous Page">
+                            &laquo;
+                        </button>
+                        <div class="pagination__buttons">
+                            <!-- Кнопки сторінок будуть додаватися тут через JS -->
+                        </div>
+                        <button class="pagination__button pagination__button--next" aria-label="Next Page">
+                            &raquo;
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="burger-menu">
+            <button class="burger-menu__button" aria-label="Toggle Menu">
+                &#9776; 
+            </button>
+        </div>
     </main>
     <script src="js/main.js"></script>
 </body>
