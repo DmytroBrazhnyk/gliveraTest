@@ -150,33 +150,104 @@ body {
         font-size: 14px;
         color: $color-card-text; 
     }
-
     &__table {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
     }
-
     &__table-column, &__table-cell {
         padding: 20px;
         border-bottom: 1px solid $color-card-border;
     }
-
     &__table-column {
         font-weight: bold;
         color: $color-title-text; 
         white-space: nowrap; 
     }
-
     &__table-cell {
         color: $color-card-text; 
     }
     &__footer{
         display: flex;
+        padding-left: 38px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        padding-top: 32px;
         &-info{
-
+            font-size: 14px;
+            color: $color-title-text; 
         }
-        .customer__pagination{
+    }
+}
 
+.customer__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; // Між кнопками
+}
+.pagination__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; // Між кнопками
+}
+
+.pagination__button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-card-border;
+    background-color: transparent; // Без фону
+    color: $color-card-text;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px; // Кути для кнопок
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: $color-card-border;
+        color: $color-white;
+    }
+    
+    &--prev, &--next {
+        font-size: 18px; // Розмір стрілок
+    }
+}
+.current{
+    background-color: $color-hover;
+    color:$color-white;
+}
+
+.customer__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; // Відстань між кнопками
+
+    .customer__pagination-button {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $color-card-border;
+        background-color: $color-search-bg; // Колір фону кнопок
+        color: $color-card-text; // Колір тексту кнопок
+        font-size: 14px; // Розмір шрифту для тексту кнопок
+        border-radius: 4px; // Закруглені краї кнопок
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: $color-search-bg; // Колір фону при наведенні
+            color: $color-title-text; // Колір тексту при наведенні
+        }
+
+        &.active {
+            background-color: $color-title-text; // Колір фону для активної кнопки
+            color: $color-search-bg; // Колір тексту для активної кнопки
         }
     }
 }

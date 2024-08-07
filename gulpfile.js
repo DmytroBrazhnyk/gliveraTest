@@ -27,9 +27,13 @@ function scssTask() {
         .pipe(browserSync.stream());
 }
 // JS Task
+
 function jsTask() {
     return src(files.jsPath)
         .pipe(terser())
+        .on('error', function(err) {
+            console.error('JS Task Error:', err.toString());
+        })
         .pipe(dest('dist/js'))
         .pipe(browserSync.stream());
 }
